@@ -1,5 +1,5 @@
 
-Setup for Python:
+# Setup for Python:
 
 1. Install Python (Setup instructions)
 
@@ -10,7 +10,7 @@ pip3 install -r api/requirements.txt
 
 3. Install Tensorflow Serving (Setup instructions)
 
-Setup for ReactJS
+# Setup for ReactJS
 
 Install Nodejs (Setup instructions)
 Install NPM (Setup instructions)
@@ -20,12 +20,12 @@ npm install --from-lock-json
 npm audit fix
 Copy .env.example as .env.
 
-Change API url in .env.
+# Change API url in .env.
 
 Setup for React-Native app
 Go to the React Native environment setup, then select React Native CLI Quickstart tab.
 
-Install dependencies
+# Install dependencies
 
 cd mobile-app
 yarn install
@@ -35,7 +35,7 @@ Copy .env.example as .env.
 
 Change API url in .env.
 
-Training the Model
+# Training the Model
 
 Download the data from kaggle.
 Only keep folders related to Potatoes.
@@ -46,7 +46,7 @@ In cell #2, update the path to dataset.
 Run all the Cells one by one.
 Copy the model generated and save it with the version number in the models folder.
 
-Running the API
+# Running the API
 
 Using FastAPI
 Get inside api folder
@@ -55,7 +55,7 @@ Run the FastAPI Server using uvicorn
 uvicorn main:app --reload --host 0.0.0.0
 Your API is now running at 0.0.0.0:8000
 
-Using FastAPI & TF Serve
+# Using FastAPI & TF Serve
 
 Get inside api folder
 cd api
@@ -66,7 +66,7 @@ Run the FastAPI Server using uvicorn For this you can directly run it from your 
 uvicorn main-tf-serving:app --reload --host 0.0.0.0
 Your API is now running at 0.0.0.0:8000
 
-Running the Frontend
+# Running the Frontend
 
 Get inside api folder
 cd frontend
@@ -74,7 +74,7 @@ Copy the .env.example as .env and update REACT_APP_API_URL to API URL if needed.
 Run the frontend
 npm run start
 
-Running the app
+# Running the app
 
 Get inside mobile-app folder
 cd mobile-app
@@ -88,7 +88,7 @@ or
 npm run ios
 Creating public (signed APK)
 
-Creating the TF Lite Model
+# Creating the TF Lite Model
 
 Run Jupyter Notebook in Browser.
 jupyter notebook
@@ -97,7 +97,7 @@ In cell #2, update the path to dataset.
 Run all the Cells one by one.
 Model would be saved in tf-lite-models folder.
 
-Deploying the TF Lite on GCP
+# Deploying the TF Lite on GCP
 
 Create a GCP account.
 Create a Project on GCP (Keep note of the project id).
@@ -113,7 +113,7 @@ Your model is now deployed.
 Use Postman to test the GCF using the Trigger URL.
 Inspiration: https://cloud.google.com/blog/products/ai-machine-learning/how-to-serve-deep-learning-models-using-tensorflow-2-0-with-cloud-functions
 
-Deploying the TF Model (.h5) on GCP
+# Deploying the TF Model (.h5) on GCP
 
 Create a GCP account.
 Create a Project on GCP (Keep note of the project id).
